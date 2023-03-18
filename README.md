@@ -80,8 +80,8 @@ ls -la | grep pip     # 查看关于pip的软链接
 rm -rf python         # 删除关于python的软链接
 rm -rf pip            # 删除关于pip的软链接
 ```
-Note: Python2不要随意删除，因为yum依赖于Python2解释。
-Python2升级到Python3，需要重新配置yum
+Note: Python2不要随意删除，因为yum依赖于Python2解释。  
+**Python2升级到Python3，需要重新配置yum**
 [Linux笔记-Centos7将python2升级为python3（及修改yum配置防报错）-CSDN](https://blog.csdn.net/qq78442761/article/details/123470711)  
 ```
 vi /usr/bin/yum
