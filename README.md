@@ -82,9 +82,10 @@ rm -rf pip            # 删除关于pip的软链接
 ```
 Note: Python2不要随意删除，因为yum依赖于python解释。
 ## 2.4 安装clash for windows
-[Fndroid/clash_for_windows_pkg-GitHub](https://github.com/Fndroid/clash_for_windows_pkg)
-我下载的版本是`Clash.for.Windows-0.20.18-x64-linux.tar.gz`  
-解压
+[Linux科学上网 Ubuntu20.04LTS 配置科学上网环境-YouTube](https://www.youtube.com/watch?v=pTlso8m_iRk&t=182s)  
+[Fndroid/clash_for_windows_pkg-GitHub](https://github.com/Fndroid/clash_for_windows_pkg)  
+我下载的版本是`Clash.for.Windows-0.20.18-x64-linux.tar.gz`    
+解压 
 ```
 tar -zxvf Clash.for.Windows-0.20.18-x64-linux.tar.gz
 ```
@@ -100,6 +101,24 @@ chmod +x cfw
 ```
 ./cfw --no-sandbox  # 不加后面这个参数无法执行
 ```
+### 2.5 开启全局代理
+全局代理指令（其中http_proxy、https_proxy为两个系统环境变量）
+```
+export http_proxy=http://127.0.0.1:7890   
+export https_proxy=http://127.0.0.1:7890  # 注意后面是http不是https
+```
+也可以将如下指令文本
+```
+export http_proxy="http://localhost:port"
+export https_proxy="http://localhost:port"
+```
+写入如下文件中
+```
+/etc/profile                  # 写在此文件中的代码会在开机时被执行
+/etc/profile.d/ClashProxy.sh  # 存放在/etc/profile.d/路径下的.sh脚本会在开机时被执行
+/root/.bashrc                 # 为shell启动文件(在MacOS中为.zshrc)
+```
+修改.bashrc后需要`source ~/.bashrc`来使之生效。
 
 
 # 3、处理问题记录
