@@ -109,7 +109,7 @@ chmod +x cfw
 ```
 ./cfw --no-sandbox  # 不加后面这个参数无法执行
 ```
-### 2.5 开启全局代理
+## 2.5 开启全局代理
 全局代理指令（其中http_proxy、https_proxy为两个系统环境变量）
 ```
 export http_proxy=http://127.0.0.1:7890   
@@ -128,7 +128,7 @@ export https_proxy="http://localhost:port"
 ```
 修改.bashrc后需要`source ~/.bashrc`来使之生效。
 
-### 2.6 安装eg插件
+## 2.6 安装eg插件
 eg插件是github上的开源项目，旨在提供linux指令的用法示例。
 [eg-Useful examples at the command line.-GitHub](https://github.com/srsudar/eg)
 使用pip3安装：
