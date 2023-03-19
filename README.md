@@ -16,6 +16,10 @@ chomd 777 -R dirname    # 给予读写执行权限
 chown root -R dirname   # 归属于root用户
 chgrp root -R dirname   # 归属于root用户组
 ```
+查看系统相关数据
+```
+uname -m    #查看处理器架构（系统位数）
+```
 
 # 1、系统概述
 - 归属：腾讯云-轻量应用服务器
