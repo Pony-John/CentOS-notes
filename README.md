@@ -129,8 +129,8 @@ export https_proxy="http://localhost:port"
 修改.bashrc后需要`source ~/.bashrc`来使之生效。
 
 ## 2.6 安装eg插件
-eg插件是github上的开源项目，旨在提供linux指令的用法示例。
-[eg-Useful examples at the command line.-GitHub](https://github.com/srsudar/eg)
+eg插件是github上的开源项目，旨在提供linux指令的用法示例。  
+[eg-Useful examples at the command line.-GitHub](https://github.com/srsudar/eg)  
 使用pip3安装：
 ```
 pip3 install eg
