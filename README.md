@@ -154,8 +154,24 @@ ln -s /usr/local/python3/bin/eg /usr/bin/eg
 eg tar
 ```
 # 3、Docker相关
-## 3.1 Docker环境部署
+## 3.1 docker环境部署
 官方安装文档：[Install Docker Engine on CentOS-docker docs](https://docs.docker.com/engine/install/centos/) 
+安装好docker后，可以再安装docker-compose来处理多个容器
+```
+pip3 install docker-compose
+```
+## 3.2 docker基本操作
+查看docker是否在运行
+```
+ps -ef | grep docker    # 查询docker进程
+# 出现以下结果，说明docker没在运行：
+root    39  10  0   14:17   pts/0   00:00:00    grep --color=auto docker
+```
+启动docker
+```
+service docker start
+```
+
 
 # X、处理问题记录
 ## X.1 Python调用SSL失效
